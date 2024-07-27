@@ -16,13 +16,13 @@ function HeroSection() {
           <div>
             <button
               href="#get-started"
-              className="outline text-lime font-semibold py-2 px-6 rounded-full transition duration-300"
+              className="outline outline-lime text-lime font-semibold py-2 px-6 rounded-full transition duration-300"
             >
               Get Started
             </button>
             <button
               href="#learn-more"
-              className="ml-4 bg-lime border-2 border-lime text-lightblack font-semibold py-2 px-6 rounded-full transition duration-300 hover:text-lightblack"
+              className="ml-4 bg-lime border-2 border-lime text-lightblack font-semibold py-2 px-6 rounded-full hover:text-lightblack"
             >
               Learn More
             </button>

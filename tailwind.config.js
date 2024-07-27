@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         lightblack: '#101010',
+        gray: '#202020',
         lime: '#B2F042',
         lavender: '#B286FD',
         lovelyred: '#E55733',

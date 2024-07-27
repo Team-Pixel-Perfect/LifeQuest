@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -31,7 +33,7 @@ function Navbar() {
           <div className="flex items-center">
             <img className="min-h-[45px] h-[45px]" src={logo} alt="logo" />
           </div>
-          <div className="hidden sm:flex items-center text-lg">
+          {/* <div className="hidden sm:flex items-center text-lg">
             <ul className="flex sm:gap-10 text-case">
               <li>
                 <a href="#">Home</a>
@@ -46,12 +48,12 @@ function Navbar() {
                 <a href="#">Contact</a>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="flex gap-3">
-            <button className="outline-none hover:outline-lime text-white py-2 px-4 rounded-full">
+            <button className="outline-none hover:outline-lime text-lime py-2 px-4 rounded-full">
               Get Started
             </button>
-            <button className="text-lightblack bg-lime py-2 px-4 rounded-full">
+            <button onClick={() => navigate('/login')} className="text-lightblack bg-lime py-2 px-4 rounded-full">                                                               
               Login
             </button>
           </div>
